@@ -5,10 +5,10 @@
 -- DROP DATABASE IF EXISTS Sistema_Ventas;
 
 -- Crear la base de datos (opcional, comentar si ya existe)
--- CREATE DATABASE IF NOT EXISTS Sistema_Ventas;
+-- CREATE DATABASE IF NOT EXISTS railway;
 
 -- Usar la base de datos
-USE Sistema_Ventas;  -- Cambiar por el nombre de la base de datos que se esté utilizando
+USE railway;  -- Cambiar por el nombre de la base de datos que se esté utilizando
 
 -- Eliminar procedimientos almacenados si existen
 DROP PROCEDURE IF EXISTS sp_ingven;
@@ -412,3 +412,10 @@ BEGIN
     END CASE;
 END //
 DELIMITER ;
+
+SELECT * FROM Distrito;
+SELECT * FROM Vendedor;
+
+-- Crear un nuevo vendedor
+INSERT INTO Vendedor (nom_ven, ape_ven, cel_ven, id_distrito)
+VALUES ('Sergio', 'Chqiuinta', '912345678', 1);
