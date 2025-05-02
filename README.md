@@ -1,4 +1,4 @@
-# Sistema de Gestión de Vendedores
+# Sistema de Gestión de Vendedores (CLONADO)
 
 Este es un sistema CRUD (Create, Read, Update, Delete) para la gestión de vendedores desarrollado con Node.js, Express y MySQL.
 
